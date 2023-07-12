@@ -1,36 +1,87 @@
 
 import React from "react";
 
-console.log("Hii - Hello");
-
 function App() {
-
-  const [todos, useTodos] = React.useState(
+  const [todoForToday, setTodoForToday] = React.useState([
     {
       title: "go to gym",
-      description: "there is a gym",
+      description: "timming for gym is 5-6",
+      id: 1,
     }
-  );
-  console.log("Hii");
+  ]);
 
   setInterval(() => {
-
-    useTodos({
-      title: "go to gym",
-      description: "ajhdgfagajsdgfjhasdgkfagsdfagk",
-    })
-
+    setTodoForToday(
+      {
+        title: "go to class please " + Math.random(),
+        description: "timming for gym is 5-6",
+        id: 1,
+      }
+    )
   }, 1000);
-
-  console.log("hello");
 
   return (
     <div>
-      {todos.title}
-      {todos.description}
+      {todoForToday.title}
+      <br />
+      {todoForToday.description}
+
     </div>
   )
+
 }
+
+export default App;
+
+// *******************************************
+/*
+import React from "react";
+
+console.log("Hii - Hello");
+
+function App() {
+  const [todos, useTodos] = React.useState([
+    {
+      title: "go to gym",
+      description: "timming for gym is 5-6",
+      id: 1,
+    },
+    {
+      title: "go to class",
+      description: "go to class 6-7",
+      id: 2,
+    }
+  ]);
+
+  return (
+    <div>
+      {todos.map((todo) => {
+        return <Todo title={todo.title} description={todo.description}></Todo>
+      })}
+    </div>
+  )
+
+}
+
+function Todo(props) {
+  return <div>
+    {props.title} <br />
+    {props.description}
+  </div>
+}
+
+export default App;
+*/
+
+// ************************************
+
+// setInterval(() => {
+//   useTodos({
+//     title: "go to gym",
+//     description: "ajhdgfagajsdgfjhasdgkfagsdfagk",
+//   });
+// }, 1000);
+
 
 
 /*
@@ -97,4 +148,3 @@ function PersonName(props) {
 */
 
 
-export default App
