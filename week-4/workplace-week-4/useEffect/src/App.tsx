@@ -35,8 +35,8 @@ function App() {
     <div>
       {todos.map((todo) => {
         return <div>
-          {todo.title}
-          {todo.description}
+          {todo.title} {'    &    '}
+          {todo.description} {'       '}
           <button>Delete</button>
           <br />
         </div>
