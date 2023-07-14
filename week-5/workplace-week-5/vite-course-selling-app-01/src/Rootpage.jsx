@@ -30,7 +30,7 @@ function Rootpage() {
                         </Button>
                         <Button variant="contained"
                             onClick={() => {
-                                window.location = '/signup'
+                                window.location = '/signin'
                             }}
                         >Sign In
                         </Button>

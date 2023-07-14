@@ -15,6 +15,7 @@ function App() {
           <Route exact path='/' element={< Rootpage />}></Route>
           <Route exact path='/signup' element={< Signup />}></Route>
           <Route exact path='/signin' element={< Signin />}></Route>
+          <Route exact path={'/*'} element={"404 Not Found"}></Route>
         </Routes>
       </Router>
     </div>
