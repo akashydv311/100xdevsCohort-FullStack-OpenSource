@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div>
-      <Compnaylogo />
       <Router>
+        <Compnaylogo />
         <Routes>
           <Route exact path='/' element={< Rootpage />}></Route>
           <Route exact path='/signup' element={< Signup />}></Route>

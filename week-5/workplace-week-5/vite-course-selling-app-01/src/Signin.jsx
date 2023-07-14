@@ -33,7 +33,7 @@ function Signin() {
                         <TextField onChange={(e) => {
                             setEmail(e.target.value);
                         }}
-                            fullWidth="true"
+                            fullWidth={true}
                             id="outlined-basic"
                             label="Email"
                             variant="outlined" />
@@ -41,7 +41,7 @@ function Signin() {
                         <TextField onChange={(e) => {
                             setPassword(e.target.value);
                         }}
-                            fullWidth="true"
+                            fullWidth={true}
                             id="outlined-basic"
                             label="Password"
                             variant="outlined" />

@@ -1,7 +1,9 @@
 import { Typography, Card, Button } from '@mui/material';
-
+import { useNavigate } from 'react-router-dom';
 
 function Rootpage() {
+    const navigate = useNavigate();
+
     return (
         <div>
             <Card variant="outlined" style={{
@@ -24,13 +26,15 @@ function Rootpage() {
                     }>
                         <Button variant="contained"
                             onClick={() => {
-                                window.location = '/signup'
+                                navigate('/signup');
+                                // window.location = '/signup'
                             }}
                         >Sign Up
                         </Button>
                         <Button variant="contained"
                             onClick={() => {
-                                window.location = '/signin'
+                                navigate('/signin');
+                                // window.location = '/signin'
                             }}
                         >Sign In
                         </Button>
