@@ -2,12 +2,11 @@
 function Compnaylogo() {
     return (
         <div style={{
-            fontSize: '30px'
+            fontSize: '25px'
         }}>
             coursera
         </div>
 
     )
 }
-
 export default Compnaylogo;

@@ -40,5 +40,4 @@ function Rootpage() {
         </div>
     )
 }
-
 export default Rootpage;
