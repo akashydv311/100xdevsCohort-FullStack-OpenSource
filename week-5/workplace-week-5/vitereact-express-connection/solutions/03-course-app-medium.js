@@ -122,6 +122,10 @@ app.get('/users/courses', authenticateJwt, (req, res) => {
   res.json({ courses: COURSES });
 });
 
+app.get('/', (req, res) => {
+  res.send("This is / responce");
+})
+
 app.post('/users/courses/:courseId', authenticateJwt, (req, res) => {
   const course = COURSES.find(c => c.id === parseInt(req.params.courseId));
   if (course) {
