@@ -1,0 +1,9 @@
+
+generics
+
+
+// Process manager
+
+pm2, forever
+
+pm2 -> start ( pm2 start dist/index.js ) , end( pm2 kill )
